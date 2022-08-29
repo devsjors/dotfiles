@@ -1,0 +1,9 @@
+[user]
+  name = Sjors
+  email = sjorspieter@live.nl
+
+[init]
+  defaultBranch = master
+
+[includeIf "gitdir:~/Projects/"]
+  path = ~/.gitconfig-work
