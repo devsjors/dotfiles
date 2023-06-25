@@ -13,7 +13,6 @@ fi
 
 # Define formulae
 formulae=(
-    "composer"
     "git"
     "npm"
     "nvm"
@@ -22,27 +21,22 @@ formulae=(
 
 # Define casks
 casks=(
-    "1password"
-    "alfred"
     "bitwarden"
     "discord"
-    "docker"
-    "docker"
-    "firefox"
     "google-chrome"
-    "imageoptim"
     "iterm2"
+    "postman"
+    "raycast"
     "rectangle"
     "slack"
     "spotify"
     "tableplus"
+    "visual-studio-code-insiders"
     "visual-studio-code"
     "whatsapp"
 )
 
 dirs=(
-    ".composer"
-    ".docker"
     ".nvm"
     ".ssh"
     ".vscode"
