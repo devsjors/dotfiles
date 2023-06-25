@@ -4,6 +4,3 @@
 
 [init]
   defaultBranch = master
-
-[includeIf "gitdir:~/Projects/"]
-  path = ~/.gitconfig-work
