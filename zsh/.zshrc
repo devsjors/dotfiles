@@ -34,7 +34,6 @@ load-nvmrc() {
 }
 
 add-zsh-hook chpwd load-nvmrc
-load-nvmrc
 
 # ========================================
 #  aliases
@@ -43,24 +42,37 @@ load-nvmrc
 # General Aliases
 alias zsh-edit="code ~/.zshrc"
 alias zsh-update="source ~/.zshrc"
+alias code="code-insiders ."
 
-# Laravel Aliases
+# Folder Aliases
+alias amgl="cd ~/work/gitlab"
+alias amgh="cd ~/work/github"
+
+# (Sail) PHP Aliases
 alias sail="vendor/bin/sail"
 alias su="sail up"
 alias sud="sail up -d"
-alias pamf="sail php artisan migrate:fresh"
-alias pamfs="sail php artisan migrate:fresh --seed"
-alias paoc="sail php artisan optimize:clear"
-alias pacc="sail php artisan config:clear"
-alias pamm="sail php artisan make:model"
-alias pamc="sail php artisan make:controller"
+alias spamf="sail php artisan migrate:fresh"
+alias spamfs="sail php artisan migrate:fresh --seed"
+alias spaoc="sail php artisan optimize:clear"
+alias spacc="sail php artisan config:clear"
+alias spamm="sail php artisan make:model"
+alias spamc="sail php artisan make:controller"
+alias pamf="php artisan migrate:fresh"
+alias pamfs="php artisan migrate:fresh --seed"
+alias paoc="php artisan optimize:clear"
+alias pacc="php artisan config:clear"
+alias spamm="php artisan make:model"
+alias spamc="php artisan make:controller"
 
 # Docker Aliases
 alias doks='docker stop $(docker ps -aq)'
 alias dokx="docker exec -it $(docker ps | grep 80/tcp | head -n1 | awk '{print $1;}') sh"
 
 # Node Aliases
+alias nrs="npm run start"
 alias nrd="npm run dev"
+alias nrb="npm run build"
 alias nrw="npm run watch"
 alias nrh="npm run hot"
 
@@ -76,5 +88,6 @@ plugins=(
 )
 
 ZSH_THEME="spaceship"
+SPACESHIP_CHAR_SYMBOL="🚀 ❯ "
 
 source $ZSH/oh-my-zsh.sh
