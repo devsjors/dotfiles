@@ -19,8 +19,6 @@ echo "--- Installing VS Code extensions ---"
 
 # Define missing VS code features extensions
 missing=(
-    iocave.customize-ui
-    iocave.monkey-patch
     mrmlnc.vscode-duplicate
     rebokrnix.toggle
 )
@@ -28,20 +26,20 @@ missing=(
 # Define theming extensions
 theme=(
     atomiks.moonlight
-    PKief.material-icon-theme
+    BeardedBear.beardedicons
 )
 
 # Define commonly used extensions
 common=(
     bradlc.vscode-tailwindcss
+    Cardinal90.multi-cursor-case-preserve
     dbaeumer.vscode-eslint
     eamodio.gitlens
     esbenp.prettier-vscode
-    junstyle.php-cs-fixer
-    ms-vsliveshare.vsliveshare
+    formulahendry.auto-rename-tag
+    jock.svg
     naumovs.color-highlight
-    Vue.volar
-    Vue.vscode-typescript-vue-plugin
+    yoavbls.pretty-ts-errors
 )
 
 echo "--- Installing resolve missing features extensions ---"
