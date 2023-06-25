@@ -61,9 +61,9 @@
     "editor.fontFamily": "Monolisa",
     "editor.fontWeight": 400,
     "editor.fontSize": 15,
-    "editor.lineHeight": 2.5,
+    "editor.lineHeight": 2.4,
     "workbench.colorTheme": "Moonlight II Italic",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "bearded-icons",
 
     /**
     * Find
@@ -85,59 +85,16 @@
     * Code
     **/
     "emmet.includeLanguages": {
-        "blade": "html",
-        "vue-html": "html",
-        "vue": "html"
+        "javascript": "javascriptreact",
+        "vue-html": "html"
     },
-    "files.associations": {
-        ".php_cs": "php",
-        ".php_cs.dist": "php"
-    },
-
-    /**
-    * PHP
-    **/
-    "php.suggest.basic": false,
-
-    /**
-    * PHP CS Fixer
-    **/
-    "[php]": {
-        "editor.defaultFormatter": "junstyle.php-cs-fixer"
-    },
-    "php-cs-fixer.autoFixByBracket": false,
-    "php-cs-fixer.onsave": true,
-    "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.showOutput": false,
 
     /**
     * Prettier
     **/
-    "[javascript][vue][json]": {
+    "[javascript][javascriptreact][typescript][typescriptreact][graphql]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     },
-    "prettier.requireConfig": false,
-    "prettier.useEditorConfig": false,
-
-    /**
-    * Window Settings
-    **/
-    "window.nativeTabs": true,
-    "window.titleBarStyle": "native",
-    "customizeUI.titleBar": "inline",
-    "customizeUI.stylesheet": {
-        ".editor .title": "background: transparent !important;",
-        ".editor .title .label-container": "visibility: hidden;",
-        // Hide top-right buttons
-        ".editor .title .actions-container .action-item a": "visibility: hidden;",
-        // Show top-right "settings goto icon"
-        ".editor .title .actions-container .action-item a[title=\"Open Settings (UI)\"]": "visibility: initial;",
-        ".editor .title .actions-container .action-item a[title=\"Open Settings (JSON)\"]": "visibility: initial;",
-        // Make it the "right-most" icon.
-        ".editor .title .actions-container": "flex-direction: row-reverse;",
-        // Only show the scrollbar on hover.
-        ".editor .scrollbar .slider": "visibility: hidden",
-        ".editor .scrollbar:hover .slider": "visibility: initial"
-    },
+    "prettier.requireConfig": false
 }
