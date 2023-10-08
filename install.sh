@@ -22,6 +22,7 @@ formulae=(
 # Define casks
 casks=(
     "bitwarden"
+    "copyclip"
     "discord"
     "google-chrome"
     "iterm2"
@@ -31,7 +32,6 @@ casks=(
     "slack"
     "spotify"
     "tableplus"
-    "visual-studio-code-insiders"
     "visual-studio-code"
     "whatsapp"
 )
