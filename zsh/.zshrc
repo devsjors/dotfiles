@@ -34,6 +34,7 @@ load-nvmrc() {
 }
 
 add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
 # ========================================
 #  aliases
@@ -42,11 +43,6 @@ add-zsh-hook chpwd load-nvmrc
 # General Aliases
 alias zsh-edit="code ~/.zshrc"
 alias zsh-update="source ~/.zshrc"
-alias code="code-insiders ."
-
-# Folder Aliases
-alias amgl="cd ~/work/gitlab"
-alias amgh="cd ~/work/github"
 
 # (Sail) PHP Aliases
 alias sail="vendor/bin/sail"
@@ -65,16 +61,10 @@ alias pacc="php artisan config:clear"
 alias spamm="php artisan make:model"
 alias spamc="php artisan make:controller"
 
-# Docker Aliases
-alias doks='docker stop $(docker ps -aq)'
-alias dokx="docker exec -it $(docker ps | grep 80/tcp | head -n1 | awk '{print $1;}') sh"
-
 # Node Aliases
 alias nrs="npm run start"
 alias nrd="npm run dev"
 alias nrb="npm run build"
-alias nrw="npm run watch"
-alias nrh="npm run hot"
 
 # ========================================
 #  zsh plugins

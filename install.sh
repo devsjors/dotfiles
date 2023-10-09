@@ -26,12 +26,11 @@ casks=(
     "discord"
     "google-chrome"
     "iterm2"
-    "postman"
+    "microsoft-outlook"
     "raycast"
     "rectangle"
     "slack"
     "spotify"
-    "tableplus"
     "visual-studio-code"
     "whatsapp"
 )

@@ -10,7 +10,6 @@ nvm install --lts
 # ========================================
 echo "--- Setting gitconfig files ---"
 curl -s https://raw.githubusercontent.com/devsjors/dotfiles/master/git/.gitconfig -o ~/.gitconfig
-curl -s https://raw.githubusercontent.com/devsjors/dotfiles/master/git/.gitconfig-work -o ~/.gitconfig-work
 
 # ========================================
 #  VS Code
